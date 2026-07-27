@@ -1,0 +1,23 @@
+/* Footer Styles */
+.about-footer, .footer {
+  background-color: #111;       /* Dark background to match modern theme */
+  color: #fff;                  /* White text */
+  text-align: center;           /* Center content */
+  padding: 20px 10px;           /* Vertical & horizontal padding */
+  margin-top: 40px;             /* Space above footer */
+  font-size: 14px;              /* Small readable text */
+  border-top: 1px solid #333;   /* Subtle top border */
+}
+
+.about-footer p, .footer p {
+  margin: 5px 0;                /* Spacing between lines */
+}
+
+.about-footer a, .footer a {
+  color: #ffa500;               /* Orange links for accent */
+  text-decoration: none;
+}
+
+.about-footer a:hover, .footer a:hover {
+  text-decoration: underline;
+}

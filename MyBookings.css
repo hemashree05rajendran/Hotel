@@ -1,0 +1,180 @@
+/* MyBookings.css */
+.my-bookings-page {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Back button */
+.back-home-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.back-home-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-1px);
+}
+
+/* Page header */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+  background-color: #ff851b;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Bookings container */
+.bookings-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow-x: auto;
+}
+
+/* Table */
+table.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.bookings-table th,
+.bookings-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.bookings-table th {
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bookings-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bookings-table tr:hover {
+  background-color: #ffe0b2;
+  transition: background 0.3s;
+}
+
+/* Booking status colors */
+.status {
+  font-weight: bold;
+}
+
+.status.confirmed {
+  color: green;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.completed {
+  color: blue;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* .bookings-container {
+    padding: 15px 10px;
+  } */
+
+  /* Container fix - already good */
+.bookings-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-x: auto;
+}
+.bookings-table th,
+.bookings-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border: 1px solid #ddd;
+  word-wrap: break-word; /* 👈 allows content to wrap inside cells */
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: center;
+  table-layout: fixed; /* 👈 ensures consistent column width */
+}
+}
+.pay-now-btn {
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-now-btn:hover {
+  background-color: #e65c00;
+}
+
+.confirmation-page button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirmation-page button:hover {
+  background: #e65c00;
+}

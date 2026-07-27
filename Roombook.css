@@ -1,0 +1,218 @@
+/* Make sure navbar and header stay at top */
+.navbar, 
+.page-header {
+  /* position: relative;   /* ensures they are above grid */
+  /* z-index: 10; */ 
+  display: none;
+opacity: 0;
+visibility: hidden;
+}
+
+/* Give spacing so room cards don’t overlap */
+.page-header {
+  margin-bottom: 20px;
+}
+
+.room-booking-container {
+  margin-top: 20px;    /* pushes cards below header */
+}
+
+.room-booking-page {
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:orange;       /* dark bg */
+  color: white;
+  padding: 10px 20px;
+  position: sticky;       /* always stays at top */
+  top: 0;
+  z-index: 1000;          /* above all other content */
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar .logout-btn {
+  padding: 8px 15px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar .logout-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+  background-color: #ff944d;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.back-home-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-home-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Room cards */
+.room-booking-container {
+  padding: 30px 20px;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.room-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.room-card h3 {
+  margin: 10px 0 5px;
+  color: #ff6600;
+}
+
+.room-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.room-card button {
+  width: 100%;
+  padding: 10px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.room-card button:hover {
+  background: #e65c00;
+}
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Modal Image */
+.modal-image {
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: 10px;
+  user-select: none;
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Prev/Next buttons */
+.modal-prev, .modal-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0 10px;
+  user-select: none;
+  color: #000;
+}
+
+.modal-prev {
+  left: 10px;
+}
+
+.modal-next {
+  right: 10px;
+}
+
+/* Caption */
+.modal-caption {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #444;
+}

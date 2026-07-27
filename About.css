@@ -1,0 +1,117 @@
+.about-hero {
+  text-align: center;
+  padding: 30px;
+  background-color: #f7f7f7;
+  color: #222;
+  width: 100vw;
+  margin:0;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #e67e22; /* orange accent */
+}
+/* Reset default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* About page */
+.about-page {
+  min-height: 100vh; /* full height */
+  background-color: #f7f7f7;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 20px; /* reduce if too much space */
+  background-color: #fff; /* optional */
+  color: #222;
+}
+
+/* Cards container */
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+/* Contact Us Form Container */
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* space between inputs */
+    max-width: 800px;
+    margin: 20px auto; /* center the form */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Input fields and textarea */
+.contact-form input,
+.contact-form textarea {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Make textarea a bit bigger */
+.contact-form textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+/* Submit button */
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #f2851f; /* your orange theme */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e67300;
+}
+
+/* Optional: Responsive */
+@media (max-width: 600px) {
+    .contact-form {
+        flex-direction: column;
+    }
+}
+

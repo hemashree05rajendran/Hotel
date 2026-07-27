@@ -1,0 +1,60 @@
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background: url("https://wallpaperaccess.com/full/2690578.jpg")
+    no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark transparent box */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffcc00;   /* 🟡 Change title color */
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #ffffff;   /* 🤍 subtitle white */
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;     /* 🤍 text white */
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-outline {
+  background-color: transparent;
+}

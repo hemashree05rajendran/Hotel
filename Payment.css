@@ -1,0 +1,104 @@
+/* Main page wrapper */
+.payment-page {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ff6600;
+  color: #fff;
+}
+
+/* Back button */
+.back-home-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.back-home-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Container to center content */
+.payment-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Card for payment table */
+.payment-card {
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.payment-card h2 {
+  color: #ff6600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Table styling */
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bookings-table th,
+.bookings-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.bookings-table th {
+  background-color: #ff6600;
+  color: white;
+}
+
+/* Status styling */
+td.completed {
+  color: green;
+  font-weight: bold;
+}
+
+td.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Payment button */
+.pay-now-btn {
+  padding: 8px 16px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pay-now-btn:hover {
+  background: #e65c00;
+}

@@ -1,0 +1,52 @@
+.login-page {
+  height: 100vh;              /* full screen height */
+  width: 100vw;               /* full screen width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("https://www.romeanditaly.com/wp-content/uploads/2019/08/Concierge-Service-Rome-and-Italy.jpg")
+    no-repeat center center / cover;   /* make bg full screen */
+}
+
+/* Login box */
+.form-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background: #e64a19;
+}
